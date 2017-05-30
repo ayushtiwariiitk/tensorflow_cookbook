@@ -212,9 +212,9 @@ lstm_model = LSTM_Model(rnn_size, batch_size, learning_rate,
                         training_seq_len, vocab_size)
 
 # Tell TensorFlow we are reusing the scope for the testing
-with tf.variable_scope(tf.get_variable_scope(), reuse=True):
-    test_lstm_model = LSTM_Model(rnn_size, batch_size, learning_rate,
-                                 training_seq_len, vocab_size, infer_sample=True)
+#with tf.variable_scope(tf.get_variable_scope(), reuse=True):
+ #   test_lstm_model = LSTM_Model(rnn_size, batch_size, learning_rate,
+  #                               training_seq_len, vocab_size, infer_sample=True)
 
 
 # Create model saver
